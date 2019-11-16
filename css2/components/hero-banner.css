@@ -1,0 +1,5 @@
+.hp-hero-banner{
+	background-image: url("../images/hero-banner.jpg");
+	background-size: cover;
+	height: 300px;
+}

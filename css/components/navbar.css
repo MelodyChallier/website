@@ -1,0 +1,52 @@
+.banner h1, .banner h2{
+	color: white;
+}
+
+.search-bar-banner{
+	margin: 350px auto;
+	max-width: 100%;
+}
+
+.search-banner{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.btn-search{
+	background-color: #fcb542 !important;
+	color: white !important;
+	border: none !important;
+}
+
+.btn-search:hover {
+	background-color: white !important;
+	color: #fcb542 !important;
+}
+
+.btn-outline-success{
+	color: white !important;
+	border-color: #fcb542 !important;
+	background-color: #fcb542 !important;
+}
+
+.btn-outline-success:hover{
+	color: #fcb542 !important;
+	border-color: #fcb542 !important;
+	background-color: white !important;
+}
+
+.navbar{
+	position: fixed !important;
+	z-index: 1;
+	width: 100%;
+}
+
+.nav-link:hover{
+	font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item:hover{
+	background-color: grey;
+	color: white;
+}
