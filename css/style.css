@@ -3,7 +3,7 @@
 }
 
 .search-bar-banner{
-	margin: 350px auto;
+	margin: 30% auto;
 	max-width: 100%;
 }
 
@@ -42,6 +42,11 @@
 	width: 100%;
 }
 
+.p80{
+	width: 80%;
+	margin: 20px auto;
+}
+
 .nav-link:hover{
 	font-weight: bold;
 }
@@ -54,6 +59,11 @@
 .card-title{
 	padding-bottom: 20px;
 	text-align: center;
+}
+
+.card-text{
+	height: 100px;
+	overflow: scroll;
 }
 
 .card-img-top{
@@ -237,9 +247,32 @@ footer h2{
 	margin-top: 20px;
 }
 
+.flexprix{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.prix{
+	display: flex;
+	align-items: flex-end;
+	width: 50%;
+	justify-content: space-between;
+}
+
+.prix p{
+	margin: 0 auto;
+}
+
 .contactbutton{
 	font-weight: bold;
 	text-align: center;
+}
+
+.fa-shopping-cart{
+	font-size: 2em;
+	color: #ffbf36;
 }
 
 .contactbutton:hover{
@@ -292,6 +325,7 @@ span .fas{
 .card2{
 	width: auto;
 	max-width: 350px;
+	height: 440px;
 	border: 1px solid lightgrey;
 	margin: 90px auto 30px auto;
 }
@@ -302,19 +336,99 @@ span .fas{
 	text-align: center;
 }
 
+.flexpromo{
+	display: flex;
+	margin: auto;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#margin{
+	margin-top: 20px;
+}
+
+.dark{
+	color: black;
+}
+
 .row{
 	margin: 0px !important;
 }
 
+.hide{
+	display: none;
+}
+
+.box6{
+	background-color: #469c2f;
+	width: 80%;
+	margin: auto;
+	border-radius: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: white;
+}
+
+.box6 img{
+	width: 300px;
+	margin: 10px;
+}
+
 .appart-bann-hyrule{
-	background-image: url(../images/castle02.png);
+	background-image: url(../images/hyrule-castle.png);
 }
 
 .appart-bann-cocorico{
-	background-image: url(../images/cocorico3.jpg);
+	background-image: url(../images/cocorico.jpg);
 }
 
-.appart-bann-hyrule, .appart-bann-cocorico{
+.appart-bann-korogu{
+	background-image: url(../images/korogu.jpg);
+}
+
+.appart-bann-fontaine{
+	background-image: url(../images/fontaine.jpg);
+}
+
+.appart-bann-ecaraille{
+	background-image: url(../images/ecaraille.jpg);
+}
+
+.appart-bann-goron{
+	background-image: url(../images/goron.jpg);
+}
+
+.appart-bann-elimith{
+	background-image: url(../images/elimith.jpg);
+}
+
+.appart-bann-montagne{
+	background-image: url(../images/montagne-mort.jpg);
+}
+
+.appart-bann-moldarquor{
+	background-image: url(../images/moldarquor.jpg);
+}
+
+.appart-bann-ruines{
+	background-image: url(../images/etape.png);
+}
+
+.appart-bann-zora{
+	background-image: url(../images/zora.jpg);
+}
+
+.appart-bann-gerudo{
+	background-image: url(../images/gerudo-cite.jpg);
+}
+
+.appart-bann-piaf{
+	background-image: url(../images/village-piaf.jpg);
+}
+
+.appart-bann-piaf, .appart-bann-gerudo, .appart-bann-zora, .appart-bann-ruines, .appart-bann-moldarquor, .appart-bann-montagne, .appart-bann-elimith, .appart-bann-goron, .appart-bann-ecaraille, .appart-bann-fontaine, .appart-bann-hyrule, .appart-bann-cocorico, .appart-bann-korogu{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 80%;
@@ -352,6 +466,17 @@ h2 p{
 .badge-secondary{
 	text-transform: uppercase !important;
 	background-color: #abf246 !important;
+	height: auto;
+}
+
+.badge-danger{
+	text-transform: uppercase;
+}
+
+.info{
+	font-size: 0.6em;
+	font-style: italic;
+	line-height: 10px !important;
 }
 
 .logement-coeur{
@@ -396,6 +521,10 @@ h2{
 	margin-top: 50px !important;
 }
 
+.titre h2{
+	text-align: center;
+}
+
 footer h2{
 	margin-top: 10px !important;
 }
@@ -411,6 +540,16 @@ footer h2{
 	padding: 10px;
 	border-radius: 15px;
 	box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, .2);
+}
+
+button a{
+	color: white;
+	text-decoration: none;
+}
+
+button:hover a{
+	color: #ffbf36;
+	text-decoration: none;
 }
 
 @media (max-width: 991px){
@@ -465,5 +604,14 @@ footer h2{
 
 .card{
 	margin: 20px auto;
+}
+
+.card2{
+	max-height: 500px;
+}
+
+.card-text{
+	height: 80px;
+	overflow: scroll;
 }
 }

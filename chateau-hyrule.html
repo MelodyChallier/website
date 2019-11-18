@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hyrule BnB - Château d'Hyrule</title>
+	<title>Hyrule BnB - Nos logements</title>
 	<meta charset="utf-8">
-	<meta property="title" content="Hyrule BnB - Château d'Hyrule">
-	<meta name="description" content="Hyrule BnB, la référence de la location de logements entre particuliers. Plongez dans la splendeur Royale du Château d'Hyrule.">
-	 <meta property="og:image" content="https://res.cloudinary.com/lamenuiserie/image/upload/v1570803681/Hyrule%20BnB/castle02_elmo4x.png" />
+	<meta property="title" content="Hyrule BnB - Nos logements">
+	<meta name="description" content="Hyrule BnB, la référence de la location de logements entre particuliers dans tout le royaume d'Hyrule. Découvrez-nos logements dans la liste ci-dessous.">
+	<meta property="og:image" content="https://res.cloudinary.com/lamenuiserie/image/upload/v1570803681/Hyrule%20BnB/castle02_elmo4x.png" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="images/logo.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/a6a9e715ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="index.html"><img src="images/airbnb.png" class="logo"></a>
+			<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -28,9 +29,8 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="logements.html">Nos appartements</a>
-							<a class="dropdown-item" href="#">Nos maisons</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Nos résidences luxe</a>
+							<a class="dropdown-item" href="maisons.html">Nos maisons</a>
 						</div>
 					</li>
 					<li class="nav-item active">
@@ -41,6 +41,7 @@
 					<input class="form-control mr-sm-2" type="search" placeholder="Votre recherche..." aria-label="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
 				</form>
+				<div><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></div>
 			</div>
 		</nav>
 	</header>
@@ -59,6 +60,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div class="col-12 col-md-12 col-lg-6">
+			<h2>Intéressé ? Contactez le propriétaire dès maintenant !</h2>
 			<form>
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Email address</label>
@@ -92,18 +94,46 @@
 		</div>
 	</div>
 	<footer>
-		<div class="footer">
-			<div class="container-footer">
-				<div class="icons-footer">
-					<i class="fab fa-facebook-f"></i>
-					<i class="fab fa-github"></i>
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-instagram"></i>
-				</div>
-				<p>Ce site est codé avec<span><i class="fas fa-heart"></i></span>La WAB</p>
+		<div class="container-footer">
+			<div class="presentation-site-footer">
+				<img src="images/logo.png" alt="logo hyrule bnb">
+				<h2>Hyrule BnB</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique lorem libero, eget mollis dui gravida ut. Phasellus a elit vel ante accumsan sodales. Nunc vitae turpis odio. Sed efficitur nisl eget orci gravida pulvinar. Phasellus posuere consectetur sapien, tempus faucibus dui posuere at.</p>
 			</div>
-		</div>
-	</footer>
+			<div class="liens-utiles-footer">
+				<h2>Liens utiles</h2>
+				<ul>
+					<li><a href="#">Plan du site</a></li>
+					<li><a href="#">Conditions Générales d'Utilisation</a></li>
+					<li><a href="#">Conditions Générales de Vente</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+			<div class="reseaux-sociaux-footer">
+				<h2>Suivez-nous !</h2>
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square rainbow-txt-hover"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square rainbow-txt-hover"></i></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><i class="fab fa-instagram rainbow-txt-hover"></i></a></li>
+					<li><a href="#"><i class="fab fa-tripadvisor rainbow-txt-hover"></i></a></li>
+				</ul>
+			</div>
+			<div class="find-us-footer">
+				<h2>Où nous trouver ?</h2>
+				<div class="findus">
+					<i class="fas fa-map-marker-alt"></i>
+					<h4>Hyrule BnB - siège</h4>
+				</div>
+				<div>
+					Maison 58, Vieux centre d'Hyrule
+				</div>
+				<div class="contact">
+					<a href="#" alt="#" class="rainbow-txt contactbutton"><i class="far fa-paper-plane rainbow-txt contactbutton"></i> NOUS CONTACTER</a>
+				</div>
+			</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
