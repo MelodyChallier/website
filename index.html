@@ -4,9 +4,10 @@
 	<title>Hyrule BnB - Accueil</title>
 	<meta charset="utf-8">
 	<meta property="title" content="Hyrule BnB - Nos logements">
-	<meta name="description" content="Hyrule BnB, la référence de la location de logements entre particuliers. Choisissez, réservez, voyagez !.">
+	<meta name="description" content="Hyrule BnB, la référence de la location de logements entre particuliers dans tout le Royaume d'Hyrule. Choisissez, réservez, voyagez !">
 	<meta property="og:image" content="https://res.cloudinary.com/lamenuiserie/image/upload/v1570803681/Hyrule%20BnB/castle02_elmo4x.png" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="images/logo.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/a6a9e715ae.js" crossorigin="anonymous"></script>
 </head>
@@ -28,19 +29,19 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="logements.html">Nos appartements</a>
-							<a class="dropdown-item" href="#">Nos maisons</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Nos résidences luxe</a>
+							<a class="dropdown-item" href="maisons.html">Nos maisons</a>
 						</div>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Nous contacter <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="contact.html">Nous contacter <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search" placeholder="Votre recherche..." aria-label="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
 				</form>
+				<div><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></div>
 			</div>
 		</nav>
 	</header>
@@ -48,7 +49,7 @@
 		<div class="shadow">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-10 search-bar-banner">
+					<div class="col-12 col-md-12 col-lg-10 search-bar-banner">
 						<h1>La référence du BnB dans le royaume d'Hyrule</h1>
 						<h3>Lorem ipsum dolor sit amet consectur bla bla.</h3>
 						<form class="form-inline my-2 my-lg-0 search-banner">
@@ -104,6 +105,25 @@
 					</div>
 				</div>
 			</div>
+			<div class="box6">
+		<h2>Promotions de Noël !</h2>
+		<h3 id="margin">Noël approche à grands pas : évadez-vous en cliquant sur le bouton ci-dessous, puis revenez sur cet encart.</h3>
+		<button id="surprise" class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="#">Surprise !</a></button>
+		<div class="col-12 col-lg-4 hide flexpromo" id="promo">
+				<div class="card hide flexpromo" id="promo" style="width: 18rem;">
+					<div class="card-body">
+						<div class="icon-flex">
+							<i class="fas fa-gifts"></i>
+						</div>
+						<div class="card-flex">
+							<h5 class="card-title dark">HYRULEXMAS19</h5>
+							<p class="card-text dark">Vous pouvez profiter de votre code promotionnel dès aujorud'hui !</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="hide flexpromo" id="paspromo">Nous vous souhaitons dans ce cas une bonne navigation !</p>
+	</div>
 			<div class="col-12 col-lg-12 titre">
 				<h2>Nos logements coup de coeur du moment </h2>
 			</div>
@@ -114,21 +134,21 @@
 					</div>
 					<h5><span class="strike">1 200 rubis</span> <span class="badge badge-secondary">promo</span> <span class="promo">800 rubis</span></h5>
 					<div class="btncenter">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">En savoir plus</button>
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="chateau-hyrule.html">J'y vais !</a></button>
 					</div>
 				</div>
 				<div class="logement-coeur">
 					<h3>La fontaine de la grande fée<i class="fas fa-heart"></i></h3>
 					<h5><span class="strike">750 rubis</span> <span class="badge badge-secondary">promo</span> <span class="promo">600 rubis</span></h5>
 					<div class="btncenter">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="fontaine-fee.html">J'y vais !</a></button>
 					</div>
 				</div>
 				<div class="logement-coeur">
 					<h3>Gîte Goron<i class="fas fa-heart"></i></h3>
 					<h5><span class="strike">700 rubis</span> <span class="badge badge-secondary">promo</span> <span class="promo">650 rubis</span></h5>
 					<div class="btncenter">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="goron.html">J'y vais !</a></button>
 					</div>
 				</div>
 			</div>
@@ -180,24 +200,77 @@
 				<div class="card-body">
 					<h5 class="card-title">Le village d'Écaraille</h5>
 					<p class="card-text">Succombez au charme de ce paisible village de pêcheur, situé en bord de mer. Niché au coeur de la vallée, vous serez en tête à tête avec la paix et le ressac.</p>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">J'y vais !</button>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>120 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="ecaraille.html">J'y vais !</a></button>
 				</div>
+			</div>
 			</div>
 			<div class="card2">
 				<img src="images/korogu.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<h5 class="card-title">La forêt Korogu</h5>
 					<p class="card-text">Envie d'une mise au vert ? La forêt Korogu est le lieu de paix par excellence. Hyrule BnB décline toute responsabilité en cas de vol d'objets par les korogus...</p>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">J'y vais !</button>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>160 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="foret-korogu.html">J'y vais !</a></button>
 				</div>
+			</div>
 			</div>
 			<div class="card2">
 				<img src="images/elimith.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<h5 class="card-title">Le village d'Elimith</h5>
 					<p class="card-text">Que vous soyez ferru de commerce ou de technologie antique, le village d'Elimith est fait pour vous ! Découvrez son incontournable laboratoire antique et ses commerces charmants.</p>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">J'y vais !</button>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>220 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="elimith.html">J'y vais !</a></button>
 				</div>
+			</div>
+			</div>
+			</div>
+		<div class="col-12 col-lg-12 titre">
+				<h2>Envie de frissons ?</h2>
+			</div>
+			<div class="destination-hasard">
+			<div class="card2">
+				<img src="images/montagne-mort.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">La montagne de la Mort</h5>
+					<p class="card-text">Idéal pour les amateurs de sensations fortes ! Vivez un séjour au rythme des éruptions volcanique, des éboulis de roches et des flares au coeur de la montagne de la Mort. *<span class="info"><br>* Des remèdes ignifus sont nécessaire à la survie dans la montagne de la Mort. Des remèdes sont offerts dès 3 nuits achetées.</span></p>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>700 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="montagne.html">J'y vais !</a></button>
+				</div>
+			</div>
+			</div>
+			<div class="card2">
+				<img src="images/moldarquor.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Bivouac auprès des Moldarquor</h5>
+					<p class="card-text">Rares sont les personnes à pouvoir témoigner d'avoir vu un Moldarquor. Si vous souhaitez faire partie de ces chanceux, rejoignez vite nos excursions bivouac dans le désert Gérudo ! Au rendez-vous, observation des Moldarquor, dégustation de melon glagla et course de morses des sables.</p>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>900 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="moldarquor.html">J'y vais !</a></button>
+				</div>
+			</div>
+			</div>
+			<div class="card2">
+				<img src="images/etape.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Camping dans les ruines</h5>
+					<p class="card-text">Dormir à la belle étoile, vous en rêvez ? Les potentiels gardiens encore actifs, les bokoblins et les moblins ne vous effraient pas ? Alors essayez notre aventure au coeur des ruines de l'étape d'Hyrule !</p>
+					<div class="flexprix">
+						<div class="prix">
+						<span class="badge badge-secondary">a partir de</span><p>990 rubis</p></div>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="ruines.html">J'y vais !</a></button>
+				</div>
+			</div>
 			</div>
 		</div>
 		</div>
@@ -243,8 +316,24 @@
 					Maison 58, Vieux centre d'Hyrule
 				</div>
 				<div class="contact">
-					<a href="#" alt="#" class="rainbow-txt contactbutton"><i class="far fa-paper-plane rainbow-txt contactbutton"></i> NOUS CONTACTER</a>
+					<a href="contact.html" alt="#" class="rainbow-txt contactbutton"><i class="far fa-paper-plane rainbow-txt contactbutton"></i> NOUS CONTACTER</a>
 				</div>
 			</footer>
+			<script>
+				const promo = document.querySelector("#promo");
+		const surprise = document.querySelector("#surprise");
+		surprise.addEventListener("click", (event) =>{
+			const question = (prompt("Souhaitez-vous obtenir un code promotionnel ? Répondez par oui ou par non."));
+			console.log(typeof question);
+			if (question.toUpperCase() === "OUI"){
+				document.querySelector("#promo").classList.remove("hide");
+				document.querySelector("#paspromo").classList.add("hide");
+			}
+			if (question.toUpperCase() === "NON"){
+				document.querySelector("#paspromo").classList.remove("hide");
+				document.querySelector("#promo").classList.add("hide");
+			}
+		})
+	</script>
 		</body>
 		</html>
