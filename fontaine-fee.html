@@ -37,31 +37,25 @@
 						<a class="nav-link" href="#">Nous contacter <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Votre recherche..." aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-				</form>
-				<div><a href="panier.html"><i class="fas fa-shopping-cart"></i></a></div>
-			</div>
-		</nav>
-	</header>
-	<div class="row">
-	<div class="appart-bann-fontaine">
-	</div>
-</div>
-	<div class="container-appart row">
-		<div class="col-12 col-md-12 col-lg-6">
-			<h2>La fontaine de la grande fée</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-12 col-md-12 col-lg-6">
-			<h2>Intéressé ? Contactez le propriétaire dès maintenant !</h2>
-			<form>
+				<form>
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Votre adresse mail</label>
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@exemple.com">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlSelect1">Votre question concerne...</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+						<option>Une demande de renseignement sur le logement</option>
+						<option>Une demande de remboursement</option>
+						<option>Autre</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Votre message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message ici. 500 caractères maximum."></textarea>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="#">Envoyer</a></button>
+				</div>
+			</form>
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Email address</label>
 					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
